@@ -1,0 +1,70 @@
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.add-item-form {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.item-content {
+  flex: 1;
+}
+
+.item-content h4 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.item-content p {
+  margin: 0 0 8px 0;
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.period {
+  color: #007bff;
+  font-size: 12px;
+  font-weight: 500;
+}
+  .who-am-i-section {
+            background-color: var(--who-am-i-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--who-am-i-border);
+  color: var(--who-am-i-text);
+        }
+   .tab-section {
+           background-color: var(--tab-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--tab-border);
+        }
+
+        .tab-section h4 {
+           color: var(--tab-title);
+  font-size: 1.3rem;
+  margin: 0;
+        }
+
+

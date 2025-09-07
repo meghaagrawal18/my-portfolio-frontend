@@ -1,0 +1,202 @@
+ .section-subtitle {
+          text-align: center;
+          color: var(--text-secondary);
+          font-size: 1.1rem;
+          margin-bottom: 3rem;
+        }
+
+        .contact-methods {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2rem;
+          margin-bottom: 4rem;
+          color: --text-primary;
+        }
+
+        .contact-action-area {
+          text-align: center;
+          margin-top: 2rem;
+        }
+
+        .about-header {
+          text-align: center;
+          margin-bottom: 4rem;
+        }
+
+        .section-title {
+          font-size: 3rem;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+          font-size: 1.2rem;
+          color: #999;
+          margin: 0;
+        }
+        .about-content {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 3rem;
+          align-items: start;
+        }
+
+        .-i-section {
+          background-color: #501919;
+          border-radius: 12px;
+          padding: 2rem;
+          border: 1px solid #333;
+        }
+
+        .section-header {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .section-icon {
+          color: #fbbf24;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        .who-am-i-section h3 {
+          color: #fbbf24;
+          font-size: 1.5rem;
+          margin: 0;
+        }
+
+        .who-am-i-content p {
+          color: #cccccc;
+          margin-bottom: 1.5rem;
+          line-height: 1.8;
+        }
+
+        .github-btn {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: transparent;
+          border: 1px solid #333;
+          color: #cccccc;
+          padding: 0.75rem 1.5rem;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          font-size: 0.9rem;
+        }
+
+        .github-btn:hover {
+          border-color: #fbbf24;
+          color: #fbbf24;
+        }
+
+        .btn-icon {
+          color: #fbbf24;
+        }
+
+        .about-tabs {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+        }
+
+        .tab-content {
+          display: contents;
+        }
+
+       
+        .section-description {
+          color: #999;
+          margin-bottom: 1.5rem;
+          line-height: 1.6;
+        }
+
+        .bullet-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        .bullet-list li {
+          color: #cccccc;
+          margin-bottom: 1rem;
+          line-height: 1.6;
+          position: relative;
+          padding-left: 1.5rem;
+        }
+
+        .bullet-list li::before {
+          content: "•";
+          color: #fbbf24;
+          font-weight: bold;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        .experience-list {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        .experience-item {
+          border-left: 2px solid #fbbf24;
+          padding-left: 1rem;
+        }
+
+        .experience-item h5 {
+          color: #ffffff;
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .experience-item p {
+          color: #cccccc;
+          margin-bottom: 0.5rem;
+          line-height: 1.6;
+        }
+
+        .experience-date {
+          color: #fbbf24;
+          font-size: 0.9rem;
+          font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+          .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+          }
+
+          .about-content {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+
+          .about-tabs {
+            gap: 1.5rem;
+          }
+
+          .tab-section,
+          .who-am-i-section {
+            padding: 1.5rem;
+            
+          }
+        }
+        .who-am-i-section,
+        .tab-section {
+          transition: all 0.3s ease; /* smooth movement + border color change */
+        }
+
+        .who-am-i-section:hover,
+        .tab-section:hover {
+          transform: translateY(-5px);
+          border-color: #fbbf24;
+        }
+        .contact-hint{
+            margin-top: 1rem;
+        }

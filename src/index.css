@@ -1,0 +1,220 @@
+nav {
+  background-color: var(--bg-primary);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: var(--text-primary);
+  position: relative;
+}
+
+nav li a:hover {
+  color: var(--accent);
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.project-card {
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-title {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-tag {
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.more-tag {
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+}
+
+.project-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.action-btn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bg-tertiary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.action-btn:hover {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+}
+
+.view-details {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+
+/* Dark theme (default) */
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-primary-rgb: 13, 13, 13;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #2a2a2a;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --accent: #facc15;
+  --border-color: #333;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --card-hover-shadow: rgba(0, 0, 0, 0.4);
+  --background-home: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+   --who-am-i-bg: #1a1a1a; /* dark mode background */
+  --who-am-i-border: #333;
+  --who-am-i-text: #ffffff;
+    --tab-bg: #1a1a1a;
+  --tab-border: #333;
+  --tab-title: #fbbf24;
+    --card-bg-color: #1a1a1a; /* Dark mode default */
+  --card-border-color: #333;
+   --card-bg: #1a1a1a;
+  --card-text: #ffffff;
+  --card-border: #333;
+  --skill-item-bg: #2a2a2a;
+  --skill-item-text: #cccccc;
+  
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg-primary: #dccfa2;
+  --bg-primary-rgb: 255, 255, 255;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #2c3e50;
+  --text-secondary: #fbfdff;
+  --accent: #f59e0b;
+  --border-color: #dee2e6;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: rgba(0, 0, 0, 0.15);
+  --tab-bg: #e4e7c1;
+  --tab-border: #e9ecef;
+  --tab-title: #2c3e50;
+   --who-am-i-bg: #1a1a1a;
+  --who-am-i-border: #333;
+  --who-am-i-text: #ffffff;
+  --card-bg-color:  #e4e7c1;/* Light mode default */
+  --card-border:  #e9ecef;
+
+   --card-bg: #e4e7c1;       /* cleaned */
+  --card-border: #e9ecef;
+  --card-text: #2c3e50;
+   --who-am-i-bg: #e4e7c1;   /* fixed */
+  --who-am-i-border: #e9ecef;
+  --who-am-i-text: #2c3e50;
+}
