@@ -37,7 +37,8 @@ const ContactFormModal = ({ onClose }) => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5001/api/messages", {
+       const API_URL = process.env.REACT_APP_API_URL;
+      const response = await fetch(`${API_URL}/api/messages`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
