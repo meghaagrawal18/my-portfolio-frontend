@@ -6,9 +6,10 @@ const Skills = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const API_URL = process.env.REACT_APP_API_URL;
     const fetchSkills = async () => {
       try {
-        const res = await fetch("http://localhost:5001/api/skills"); // Adjust port if needed
+        const res = await fetch(`${API_URL}/api/skills`); // Adjust port if needed
         const data = await res.json();
         setSkillCategories(data);
       } catch (error) {

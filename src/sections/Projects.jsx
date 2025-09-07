@@ -9,7 +9,8 @@ const Projects = () => {
 
   // Fetch projects from backend
   useEffect(() => {
-    fetch("http://localhost:5001/api/projects")
+      const API_URL = process.env.REACT_APP_API_URL;
+    fetch(`${API_URL}/api/projects`)
       .then((res) => res.json())
       .then((data) => {
         setProjects(Array.isArray(data) ? data : []); // set fetched projects

@@ -11,9 +11,10 @@ const [error, setError] = useState(null);
   // Fetch data from backend (MongoDB → Express API)
 
 useEffect(() => {
+  const API_URL = process.env.REACT_APP_API_URL;
   const fetchData = async () => {
     try {
-      const res = await fetch("http://localhost:5001/api/home");
+      const res = await fetch(`${API_URL}/api/home`);
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
       }

@@ -5,7 +5,8 @@ const About = () => {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5001/api/about")
+     const API_URL = process.env.REACT_APP_API_URL;
+    fetch(`${API_URL}/api/about`)
       .then((res) => res.json())
       .then((data) => {
         // If it's an array (e.g., [ { ... } ] ), take first element
