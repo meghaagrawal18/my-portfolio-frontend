@@ -1,6 +1,6 @@
 
 
-import { useState } from "react"
+import React, { useState } from "react"
 import VoiceInput from "./VoiceInput"
 import VoiceOutput from "./VoiceOutput"
 import { questions } from "../data/questions" // Import the questions data
