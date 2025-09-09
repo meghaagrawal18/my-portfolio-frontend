@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./About.css";
 
+
 const About = () => {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-     const API_URL = process.env.REACT_APP_API_URL;
+    
+    const API_URL = import.meta.env.VITE_API_URL;
+
     fetch(`${API_URL}/api/about`)
       .then((res) => res.json())
       .then((data) => {
