@@ -103,11 +103,7 @@ if (!data) return <p style={{ textAlign: "center" }}>No home data found.</p>;
                   onOpenVoiceModal() // Call the function to open the voice modal
                 }}
               >
-                <img
-                  src="src\assets\voice-assistants.png" // Assuming this path is correct for your local setup
-                  alt="Chat Icon"
-                  style={{ width: "30px", height: "30px", marginRight: "8px" }}
-                />
+                
                 Let's Talk
               </button>
             </div>
