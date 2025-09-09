@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useEffect, useRef, useState } from "react"
 import { toast } from "sonner" // Using sonner for toasts
