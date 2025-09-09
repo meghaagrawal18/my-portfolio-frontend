@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../index.css"; // Assuming you have a CSS file for Home styles
+  import dotenv from "dotenv";
 
 const Home = ({ onOpenVoiceModal }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -11,6 +12,9 @@ const [error, setError] = useState(null);
   // Fetch data from backend (MongoDB → Express API)
 
 useEffect(() => {
+
+
+dotenv.config(); // 👈 This loads variables from .env into process.env
   const API_URL = process.env.REACT_APP_API_URL;
   const fetchData = async () => {
     try {
